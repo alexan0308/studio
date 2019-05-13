@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="320" height="420">
+<p>Ваш браузер не поддерживает рисование.</p>
+</canvas>
+
+<script type="text/javascript">
+var myCanvas = document.getElementById('myCanvas');
+var ctx = myCanvas.getContext('2d');
+
+
+ctx.beginPath();
+ctx.scale(1, 2); // растягиваем по горизонтали в 2 раза
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 5;
+ctx.arc(75, 75, 50, 0, Math.PI*2, true);
+ctx.resetTransform();
+
+ctx.closePath();
+ctx.fillStyle = 'red';
+ctx.fill(); 
+ctx.stroke();
+ctx.moveTo(75,25);
+ctx.lineTo(75,250);
+
+ctx.strokeStyle = 'black';
+ctx.lineWidth = 8;
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 5;
+ctx.arc(75, 35, 20, 0, Math.PI*2, true);
+ctx.closePath();
+ctx.fillStyle = 'black';
+ctx.fill();
+ctx.stroke();
+ctx.moveTo(60,30);
+ctx.lineTo(40,10);
+
+ctx.strokeStyle = 'black';
+ctx.lineWidth = 8;
+ctx.stroke();
+ctx.moveTo(90,30);
+ctx.lineTo(110,10);
+
+ctx.strokeStyle = 'black';
+ctx.lineWidth = 8;
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 5;
+ctx.arc(60, 95, 8, 0, Math.PI*2, true);
+ctx.closePath();
+
+ctx.fillStyle = 'black';
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 5;
+ctx.arc(60, 145, 8, 0, Math.PI*2, true);
+ctx.closePath();
+
+ctx.fillStyle = 'black';
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 5;
+ctx.arc(100, 135, 8, 0, Math.PI*2, true);
+ctx.closePath();
+
+ctx.fillStyle = 'black';
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 5;
+ctx.arc(100, 190, 8, 0, Math.PI*2, true);
+ctx.closePath();
+
+ctx.fillStyle = 'black';
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 5;
+ctx.arc(45, 190, 8, 0, Math.PI*2, true);
+ctx.closePath();
+
+ctx.fillStyle = 'black';
+ctx.fill();
+ctx.stroke();
+ctx.beginPath();
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 5;
+ctx.arc(100, 75, 8, 0, Math.PI*2, true);
+ctx.closePath();
+
+ctx.fillStyle = 'black';
+ctx.fill();
+ctx.stroke();
+
+
+</script>
+
+</body>
+</html>
