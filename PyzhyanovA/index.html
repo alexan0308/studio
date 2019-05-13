@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Вариант 4</title>
+  <meta charset="utf-8">
+
+  <canvas id="smile" width="1000" height="750">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+
+<script type="text/javascript">
+    var myCanvas = document.getElementById('smile');
+
+     var cxt = myCanvas.getContext('2d');
+     
+	 //Круг
+	 cxt.beginPath();
+     cxt.strokeStyle = 'Black'; 
+     cxt.lineWidth = 2;
+     cxt.arc(200, 100, 80, 0, Math.PI, true);
+     cxt.closePath();
+     cxt.fillStyle = 'Red';
+     cxt.fill();
+     cxt.stroke();
+	 
+	 //Овалы
+     cxt.scale(1.3, 1);
+     cxt.beginPath();
+     var centerX = 110;
+     var centerY = 85;
+     var radius = 10;
+     cxt.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = '#EEEEEE';
+     cxt.fill();
+     cxt.lineWidth = 1;
+     cxt.strokeStyle = 'EEEEEE';
+     cxt.stroke();
+	 
+     cxt.scale(1.3, 1);
+     cxt.beginPath();
+     var centerX = 170;
+     var centerY = 85;
+     var radius = 10;
+     cxt.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = '#EEEEEE';
+     cxt.fill();
+     cxt.lineWidth = 1;
+     cxt.strokeStyle = 'EEEEEE';
+     cxt.stroke();
+	 
+     cxt.scale(1.3, 1);
+     cxt.beginPath();
+     var centerX = 140;
+     var centerY = 80;
+     var radius = 10;
+     cxt.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = '#EEEEEE';
+     cxt.fill();
+     cxt.lineWidth = 1;
+     cxt.strokeStyle = 'EEEEEE';
+     cxt.stroke();
+	 
+     cxt.scale(1.3, 1);
+     cxt.beginPath();
+     var centerX = 195;
+     var centerY = 75;
+     var radius = 10;
+     cxt.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = '#EEEEEE';
+     cxt.fill();
+     cxt.lineWidth = 1;
+     cxt.strokeStyle = 'EEEEEE';
+     cxt.stroke();
+	 
+     cxt.scale(1.3, 1);
+     cxt.beginPath();
+     var centerX = 160;
+     var centerY = 60;
+     var radius = 10;
+     cxt.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = '#EEEEEE';
+     cxt.fill();
+     cxt.lineWidth = 1;
+     cxt.strokeStyle = 'EEEEEE';
+     cxt.stroke();
+	 
+     cxt.scale(1.3, 1);
+     cxt.beginPath();
+     var centerX = 120;
+     var centerY = 60;
+     var radius = 10;
+     cxt.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = '#EEEEEE';
+     cxt.fill();
+     cxt.lineWidth = 1;
+     cxt.strokeStyle = 'EEEEEE';
+     cxt.stroke();
+	 
+     cxt.scale(1.3, 1);
+     cxt.beginPath();
+     var centerX = 185;
+     var centerY = 50;
+     var radius = 10;
+     cxt.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = '#EEEEEE';
+     cxt.fill();
+     cxt.lineWidth = 1;
+     cxt.strokeStyle = 'EEEEEE';
+     cxt.stroke();
+	 
+     cxt.scale(1.3, 1);
+     cxt.beginPath();
+     var centerX = 145;
+     var centerY = 40;
+     var radius = 10;
+     cxt.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+     cxt.resetTransform();
+     cxt.closePath();
+     cxt.fillStyle = '#EEEEEE';
+     cxt.fill();
+     cxt.lineWidth = 1;
+     cxt.strokeStyle = 'EEEEEE';
+     cxt.stroke();
+	 
+	 //Ножки
+	 cxt.beginPath();
+     cxt.strokeStyle = 'Black'; 
+     cxt.lineWidth = 2;
+     cxt.arc(200, 200, 21, 0, Math.PI*2, true);
+     cxt.closePath();
+     cxt.fillStyle = 'beige';
+     cxt.fill();
+     cxt.stroke();
+	 
+	 cxt.beginPath();
+     cxt.fillStyle = 'beige'; 
+     cxt.strokeStyle = 'black';
+     cxt.lineWidth = 3;
+     cxt.fillRect (180, 100, 40, 95);
+     cxt.strokeRect(180, 100, 40, 95);
+	 
+	 cxt.beginPath();
+     cxt.fillStyle = 'beige'; 
+     cxt.strokeStyle = 'black';
+     cxt.lineWidth = 2;
+     cxt.fillRect (180, 100, 40, 97);
+
+ </script>
+ </head>
+ <body>
+</html>
